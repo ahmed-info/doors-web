@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100;200;300;400;500;600;700&display=swap');
+/* @import '~@fortawesome/fontawesome-free/css/fontawesome'; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Kufi Arabic', sans-serif;
+}
+.heading {
+    display: flex !important;
+    justify-content: center !important;
+}
+
+
+.heading h1 {
+        border-radius: 10px !important;
+        /* background-color: #6C757D; */
+        text-shadow: 2px 2px 12px rgba(69, 66, 66, 0.3) !important;
+        padding: 0px 10px !important;
+        color: #1e91f9 !important;
+        margin: 20px !important;
+}
+.bg-featured-blog {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 15rem;
+  }
+.counterExperience{
+    font-size: 120px;
+    padding-left: 10px;
+    padding-right: 45px;
+    border-bottom: 16px solid #CCCCCC;
+}
+.experience{
+    display: flex;
+    align-items: center;
+    font-size: 30px
+}
+.globalHeader{
+    margin-top: 80px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 55px;
+    font-weight: bold;
+    justify-content: center;
+}
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev{
+    display: flex;
+}
+#counter::after{
+    font: 120px system-ui;
+    content: counter(count);
+    animation: counter 2.5s linear forwards alternate;
+    /* animation: counter 2s step-end; */
+    /* animation-duration: 2s; */
+    counter-reset: count 0;
+}
+.separator1{
+    width: 0;
+    height: 0;
+    border-right: 97vw solid transparent;
+    border-bottom: 13.9vw solid #E6E6E6;
+    margin-top: -13.9vw;
+}
+.separator2{
+    width: 0px;
+    height: 0px;
+    border-right: 97vw solid transparent;
+    border-bottom: 11.9vw solid #CCCCCC;
+    margin-top: -11.9vw;
+}
+.contactUs{
+    background-color: #CCCCCC;
+}
+.content{
+    position: relative;
+    top: -10vh;
+    padding-left: 60px;
+    padding-right: 10px;
+    font-weight: bold;
+    font-size: 24px;
+}
+.social{
+    background-color: #999999;
+    width: 100%;
+    height: 50px;
+}
+
+@keyframes counter {
+    0% {
+      counter-increment: count 0;
+    }
+    6.25% {
+      counter-increment: count 2;
+    }
+    12.5% {
+      counter-increment: count 4;
+    }
+    18.75% {
+      counter-increment: count 6;
+    }
+    25% {
+      counter-increment: count 8;
+    }
+    31.25% {
+      counter-increment: count 10;
+    }
+    37.5% {
+      counter-increment: count 12;
+    }
+    43.75% {
+      counter-increment: count 14;
+    }
+    50% {
+      counter-increment: count 16;
+    }
+
+    56.25% {
+        counter-increment: count 18;
+      }
+      62.5% {
+        counter-increment: count 20;
+      }
+      68.75% {
+        counter-increment: count 22;
+      }
+      75% {
+        counter-increment: count 24;
+      }
+      81.25% {
+        counter-increment: count 26;
+      }
+      87.5% {
+        counter-increment: count 28;
+      }
+      93.75% {
+        counter-increment: count 30;
+      }
+      100% {
+        counter-increment: count 32;
+      }
+
+  }
+@media(min-width:768px){
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next{
+        transform: translateX(25%);
+    }
+
+    .carousel-inner .carousel-item-start.active,
+    .carousel-inner .carousel-item-prev{
+        transform: translateX(-25%);
+    }
+}
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start{
+    transform: translateX(0);
+
+}
+/* mobile screen */
+@media(max-width:767px){
+    .carousel-inner .carousel-item>div {
+        display: none;
+    }
+    .carousel-inner .carousel-item>div:first-child{
+        display: block;
+    }
+}
+@media only screen and (max-width: 750px) {
+    .rowGallery{
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 897px) and (orientation: landscape) {
+    .imgHeader{
+        display: none !important;
+        visibility: hidden !important;
+    }
+  }
